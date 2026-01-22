@@ -25,20 +25,20 @@ body {
 }
 
 h1 {
-  font-size: 38px;
+  font-size: 32px;
   line-height: 1.2;
   margin-bottom: 14px;
 }
 
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 42px;
+  }
+}
+
 .sub {
   font-size: 18px;
-  color: #ff4d6d;
-  margin-bottom: 28px;
-  line-height: 1.5;
-}
-.sub2 {
-  font-size: 18px;
-  color: #f2f2f2;
+  color: #eaeaea;
   margin-bottom: 28px;
   line-height: 1.5;
 }
@@ -80,42 +80,6 @@ h1 {
   box-shadow: 0 0 25px rgba(255,77,109,0.6);
 }
 
-.price {
-  margin-top: 14px;
-  font-size: 20px;
-}
-
-.old-price {
-  text-decoration: line-through;
-  opacity: 0.6;
-  margin-right: 10px;
-}
-
-/* SECTION */
-.section {
-  margin-top: 70px;
-}
-
-/* BULLETS */
-.bullets {
-  max-width: 620px;
-  margin: 0 auto;
-  font-size: 19px;
-  line-height: 1.6;
-}
-
-.bullets p {
-  margin: 14px 0;
-}
-
-/* OFFER */
-.offer {
-  text-align: center;
-  margin-top: 60px;
-  font-size: 19px;
-  line-height: 1.6;
-}
-
 /* GUARANTEE */
 .guarantee {
   margin-top: 60px;
@@ -126,8 +90,19 @@ h1 {
   font-size: 19px;
   line-height: 1.6;
 }
+
+.desktop-break {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .desktop-break {
+    display: inline;
+  }
+}
 </style>
-  <!-- Meta Pixel Code -->
+
+<!-- Meta Pixel -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -140,10 +115,10 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '1576670620351437');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1576670620351437&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1576670620351437&ev=PageView&noscript=1"/>
+</noscript>
 </head>
 
 <body>
@@ -153,65 +128,35 @@ src="https://www.facebook.com/tr?id=1576670620351437&ev=PageView&noscript=1"
   <!-- HERO -->
   <div class="hero">
     <h1>
-      Leżysz w łóżku.<br>
-Jesteś zmęczony.<br>
-A Twoja głowa właśnie zaczyna gadać.
+      Leżysz w łóżku. Jesteś zmęczony.<br>
+      A sen nie przychodzi.
     </h1>
 
     <div class="sub">
-     To nie bezsenność.<br>
-To TEN moment, w którym mózg nie chce odpuścić<br>
-i wiesz, że znowu będziesz się przewracać przez godzinę.
-    </div>
-	
-	<div class="sub2">
-     Ten ebook pokazuje, jak zatrzymać dokładnie ten stan<br>
-i zakończyć wieczór w 15–30 minut — bez leków i bez walki z myślami.
+      Zamykasz oczy, przewracasz się z boku na bok
+      <span class="desktop-break"><br></span>
+      i wiesz, że znowu to potrwa dłużej, niż powinno.
     </div>
 
     <div class="vsl">
       <iframe
-  src="https://www.youtube.com/embed/Djc8m3_AOfo?rel=0&modestbranding=1&playsinline=1&iv_load_policy=3"
-  title="Sen bez walki"
-  frameborder="0"
-  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen>
-</iframe>
+        src="https://www.youtube.com/embed/AilbV0rShms?rel=0&modestbranding=1&playsinline=1&iv_load_policy=3&controls=0&disablekb=1&fs=0"
+        title="Sen bez walki"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
     </div>
 
     <div class="cta-block">
       <a href="https://www.naffy.io/mateusz-YrIY2/sen-bez-walki" class="cta">
-        Kup ebook „Sen bez walki”
+        Zobacz zmianę
       </a>
 
-      <div class="price">
-        <span class="old-price">97 zł</span><strong>47 zł</strong>
-      </div>
-
-      <p style="margin-top:12px; font-size:15px; opacity:0.8;">
-        Pobierz w 2 minuty. Zastosuj dziś wieczorem. Zaśnij w 15–30 minut.
+      <p style="margin-top:12px; font-size:14px; opacity:0.7;">
+        Zajmie mniej niż minutę
       </p>
     </div>
   </div>
-
-  <!-- DLA KOGO -->
-  <div class="section">
-    <div class="bullets">
-      <p><strong>To jest dla Ciebie, jeśli:</strong></p>
-      <p>– Scrollujesz telefon o 1–2 w nocy, bo głowa nie daje Ci spać</p>
-      <p>– Przewracasz się setny raz i wiesz, że to znowu stracona noc</p>
-      <p>– Próbowałeś melatoniny, herbat, medytacji – i nic nie działa</p>
-      <p>– Budzisz się bardziej zmęczony niż gdy poszedłeś spać</p>
-
-      <br>
-
-      <p><strong>To nie jest dla Ciebie, jeśli:</strong></p>
-      <p>– szukasz porad medycznych</p>
-      <p>– liczysz na cudowną metodę</p>
-      <p>– chcesz „naprawić sen siłą”</p>
-    </div>
-  </div>
-
 
   <!-- GWARANCJA -->
   <div class="guarantee">
@@ -229,15 +174,11 @@ i zakończyć wieczór w 15–30 minut — bez leków i bez walki z myślami.
   <!-- FINAL CTA -->
   <div class="cta-block">
     <a href="https://www.naffy.io/mateusz-YrIY2/sen-bez-walki" class="cta">
-      Kup ebook „Sen bez walki”
+      Zobacz zmianę
     </a>
-
   </div>
 
 </div>
 
 </body>
 </html>
-
-
-
